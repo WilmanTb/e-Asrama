@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "561170901724",
+    "project_id": "asramakita-173a4",
+    "storage_bucket": "asramakita-173a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561170901724:android:e6a29ba69d585d68002219",
+        "android_client_info": {
+          "package_name": "com.asramakita.asramakita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561170901724-po933a42bfk47u9t7osr26apsmnfc74s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFl0_OhjQN96gKRH0PHyzQ55_We0Gu1g0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561170901724-po933a42bfk47u9t7osr26apsmnfc74s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

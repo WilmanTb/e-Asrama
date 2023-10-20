@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dataPenghuni">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_profile"
+        android:id="@+id/img_profil"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img_profil"
+        app:layout_constraintTop_toTopOf="@id/img_profil"
+        app:layout_constraintBottom_toBottomOf="@id/img_profil"
+        android:orientation="vertical"
+        android:id="@+id/linear1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_profil"
+            android:text="Nama"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:id="@+id/nama"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/img_profil"
+            app:layout_constraintTop_toBottomOf="@id/nama"
+            android:text="NPM"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/npm"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/img_profil"
+            app:layout_constraintTop_toBottomOf="@id/npm"
+            android:text="Fakultas"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/fakultas"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/linear2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toEndOf="@id/linear1"
+       app:layout_constraintTop_toTopOf="@id/linear1"
+       app:layout_constraintBottom_toBottomOf="@id/linear1"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toEndOf="@id/img_profil"
+           android:text=":"
+           android:textSize="15sp"
+           android:textColor="@color/black"
+           android:layout_marginStart="20dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toEndOf="@id/img_profil"
+           app:layout_constraintTop_toBottomOf="@id/nama"
+           android:text=":"
+           android:textSize="15sp"
+           android:textColor="@color/black"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="10dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toEndOf="@id/img_profil"
+           app:layout_constraintTop_toBottomOf="@id/npm"
+           android:text=":"
+           android:textSize="15sp"
+           android:textColor="@color/black"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="10dp"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="5dp"
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/linear2"
+        app:layout_constraintTop_toTopOf="@id/linear2"
+        app:layout_constraintBottom_toBottomOf="@id/linear2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/nama"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Nama"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:id="@+id/namaMhs"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/npm"
+            app:layout_constraintTop_toBottomOf="@id/namaMhs"
+            android:text="1273612736"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/npmMhs"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/fakultas"
+            app:layout_constraintTop_toBottomOf="@id/npmMhs"
+            android:text="1273612736"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/fakultasMhs"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D6D4D4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

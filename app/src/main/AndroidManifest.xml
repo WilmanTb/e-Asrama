@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.asramakita.asramakita">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AsramaKita"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity_Hapus_Kamar"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Pindahkan_Penghuni_Kamar"
+            android:exported="false" />
+        <activity
+            android:name=".Tambah_Fasilitas_Kamar"
+            android:exported="false" />
+        <activity
+            android:name=".Fasilitas_Kamar"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Detail_History_Keluar_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Acitivity_History_Keluar_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".mahasiswa.infokamar.Activity_Sub_Kamar_Mhs"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ijinkeluar.Activity_Desc_Lapor_Kembali_Admin"
+            android:exported="false"
+            android:parentActivityName=".admin.ijinkeluar.Activity_Lapor_Kembali_Admin" />
+        <activity
+            android:name=".admin.ijinkeluar.Activity_Lapor_Kembali_Admin"
+            android:exported="false"
+            android:parentActivityName=".admin.ijinkeluar.Activity_Sub_Ijin_Keluar_Admin" />
+        <activity
+            android:name=".admin.ijinkeluar.Activity_Sub_Ijin_Keluar_Admin"
+            android:exported="false"
+            android:parentActivityName=".admin.Activity_Dashboard_Admin" />
+        <activity
+            android:name=".admin.ijinkeluar.Activity_Desc_Ijin_Keluar_Admin"
+            android:exported="false"
+            android:parentActivityName=".admin.ijinkeluar.Activity_Ijin_Keluar_Admin" />
+        <activity
+            android:name=".admin.ijinkeluar.Activity_Ijin_Keluar_Admin"
+            android:exported="false"
+            android:parentActivityName=".admin.ijinkeluar.Activity_Sub_Ijin_Keluar_Admin" />
+        <activity
+            android:name=".admin.kamar.Activity_Sub_Kamar"
+            android:exported="false"
+            android:parentActivityName=".admin.Activity_Dashboard_Admin" />
+        <activity
+            android:name=".Activity_Foto_Profil_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.Activity_Dashboard_Mhs" />
+        <activity
+            android:name=".mahasiswa.ijinkeluar.Activity_Lapor_Kembali_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.Activity_Dashboard_Mhs" />
+        <activity
+            android:name=".mahasiswa.ijinkeluar.Activity_Tambah_Ijin_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.Activity_Dashboard_Mhs" />
+        <activity
+            android:name=".admin.checkout.Desc_Permintaan_CheckOut"
+            android:exported="false"
+            android:parentActivityName=".admin.checkout.Permintaan_CheckOut" />
+        <activity
+            android:name=".admin.checkout.Permintaan_CheckOut"
+            android:exported="false"
+            android:parentActivityName=".admin.Activity_Dashboard_Admin" />
+        <activity
+            android:name=".mahasiswa.fragment.hspembayaran.Detail_History_Pembayaran"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.Activity_Dashboard_Mhs" />
+        <activity
+            android:name=".mahasiswa.pembayaranmhs.Detail_Pembayaran_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.pembayaranmhs.Activity_Pembayaran_Mhs" />
+        <activity
+            android:name=".mahasiswa.infokamar.Detail_Kamar_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.infokamar.Activity_InfoKamar_Mhs" />
+        <activity
+            android:name=".mahasiswa.infokamar.Activity_InfoKamar_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.Activity_Dashboard_Mhs" />
+        <activity
+            android:name=".mahasiswa.pembayaranmhs.Activity_Pembayaran_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.Activity_Dashboard_Mhs" />
+        <activity
+            android:name=".mahasiswa.pendaftaranmhs.Activity_Pendaftaran_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.Activity_Dashboard_Mhs" />
+        <activity
+            android:name=".mahasiswa.infoasrama.Activity_Informasi_Asrama_Mhs"
+            android:exported="false"
+            android:parentActivityName=".mahasiswa.Activity_Dashboard_Mhs" />
+        <activity
+            android:name=".admin.laporan.penghuni.Detail_Penghuni_Asrama"
+            android:exported="false"
+            android:parentActivityName=".admin.laporan.penghuni.Penghuni_Asrama" />
+        <activity
+            android:name=".admin.laporan.lpkamar.Laporan_Kamar"
+            android:exported="false" />
+        <activity
+            android:name=".admin.laporan.lppembayaran.Laporan_Pembayaran"
+            android:exported="false"
+            android:parentActivityName=".admin.laporan.Sub_Laporan" />
+        <activity
+            android:name=".admin.laporan.penghuni.Penghuni_Asrama"
+            android:exported="false"
+            android:parentActivityName=".admin.laporan.Sub_Laporan" />
+        <activity
+            android:name=".admin.laporan.Sub_Laporan"
+            android:exported="false"
+            android:parentActivityName=".admin.Activity_Dashboard_Admin" />
+        <activity
+            android:name=".admin.kamar.Tambah_Penghuni"
+            android:exported="false"
+            android:parentActivityName=".admin.kamar.Detail_Kamar" />
+        <activity
+            android:name=".admin.kamar.Detail_Kamar"
+            android:exported="false"
+            android:parentActivityName=".admin.kamar.Informasi_Kamar" />
+        <activity
+            android:name=".admin.kamar.Informasi_Kamar"
+            android:exported="false"
+            android:parentActivityName=".admin.Activity_Dashboard_Admin" />
+        <activity
+            android:name=".admin.pembayaran.Desc_Pembayaran"
+            android:exported="false"
+            android:parentActivityName=".admin.pembayaran.Konfirmasi_Pembayaran" />
+        <activity
+            android:name=".admin.pembayaran.Konfirmasi_Pembayaran"
+            android:exported="false"
+            android:parentActivityName=".admin.Activity_Dashboard_Admin" />
+        <activity
+            android:name=".admin.permintaanpendaftaran.Desc_Pendaftar"
+            android:exported="false"
+            android:parentActivityName=".admin.permintaanpendaftaran.Permintaan_Pendaftaran" />
+        <activity
+            android:name=".admin.permintaanpendaftaran.Permintaan_Pendaftaran"
+            android:exported="false"
+            android:parentActivityName=".admin.Activity_Dashboard_Admin" />
+        <activity
+            android:name=".admin.fasilitas.Edit_Fasilitas"
+            android:exported="false"
+            android:parentActivityName=".admin.informasiasrama.Fasilitas_Asrama" />
+        <activity
+            android:name=".admin.fasilitas.Tambah_Fasilitas"
+            android:exported="false"
+            android:parentActivityName=".admin.informasiasrama.Fasilitas_Asrama" />
+        <activity
+            android:name=".admin.informasiasrama.Fasilitas_Asrama"
+            android:exported="false"
+            android:parentActivityName=".admin.informasiasrama.Informasi_Asrama" />
+        <activity
+            android:name=".admin.informasiasrama.Tentang_Asrama"
+            android:exported="false"
+            android:parentActivityName=".admin.informasiasrama.Informasi_Asrama" />
+        <activity
+            android:name=".admin.informasiasrama.Peraturan_Asrama"
+            android:exported="false"
+            android:parentActivityName=".admin.informasiasrama.Informasi_Asrama" />
+        <activity
+            android:name=".admin.informasiasrama.Informasi_Asrama"
+            android:exported="false"
+            android:parentActivityName=".admin.Activity_Dashboard_Admin" />
+        <activity
+            android:name=".admin.Activity_Dashboard_Admin"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".mahasiswa.Activity_Dashboard_Mhs"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".auth.Activity_Login"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Activity_Register"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Landing_Page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

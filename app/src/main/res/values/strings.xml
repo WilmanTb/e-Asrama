@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">AsramaKita</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string-array name="Fakultas">
+        <item>Ilmu Komputer</item>
+        <item>Ekonomi</item>
+        <item>Hukum</item>
+        <item>Pertanian</item>
+        <item>Teknik</item>
+        <item>Sastra</item>
+        <item>PGSD</item>
+    </string-array>
+
+    <string-array name="JenisPembayaran">
+        <item>...Jenis Pembayaran...</item>
+        <item>Uang Pembangunan</item>
+        <item>Bulanan</item>
+    </string-array>
+    <string-array name="WaktuBayar">
+        <item>...Waktu Bayar...</item>
+        <item>1 Minggu</item>
+        <item>1 Bulan</item>
+        <item>3 Bulan</item>
+        <item>6 Bulan</item>
+    </string-array>
+    <string-array name="Status">
+        <item>...Status...</item>
+        <item>Diajukan</item>
+        <item>Belum membayar</item>
+        <item>Dibayar</item>
+    </string-array>
+
+    <string-array name="Lantai">
+        <item>--Pilih Lantai--</item>
+        <item>Lantai 2</item>
+        <item>Lantai 3</item>
+    </string-array>
+
+
+</resources>
